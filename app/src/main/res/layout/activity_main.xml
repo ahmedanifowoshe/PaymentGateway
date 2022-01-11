@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="15sp"
+        android:text="Payment Info."
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="15sp"
+        android:text="Cardholder Name"
+        />
+
+    <EditText
+        android:id="@+id/cardName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Card Name "
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="15sp"
+        android:fontFamily="sans-serif-light"
+        android:background="@drawable/rounded"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="15sp"
+        android:text="Card Number"
+        />
+
+    <EditText
+        android:id="@+id/carddetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input card Number"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="15sp"
+        android:fontFamily="sans-serif-light"
+        android:background="@drawable/rounded"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="15sp"
+        android:text="Expire on"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MM"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="15sp"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded"/>
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YYYY"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="15sp"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="15sp"
+        android:text="CVC code"
+        />
+
+    <EditText
+        android:id="@+id/ccv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="25sp"
+        android:background="@drawable/rounded"
+        android:fontFamily="sans-serif-light"
+        android:text="839" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonPanel"
+            android:layout_width="129dp"
+            android:layout_height="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:autoLink="all"
+            android:background="#FADA5E"
+            android:gravity="center"
+            android:shadowColor="#EE835A3E"
+            android:shadowRadius="50"
+            android:text="Make A Payment"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="225dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
